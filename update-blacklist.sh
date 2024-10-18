@@ -4,7 +4,7 @@
 # eg: update-blacklist.sh /etc/ipset-blacklist/ipset-blacklist.conf
 
 #get Abuse IP blacklist
-curl -G https://api.abuseipdb.com/api/v2/blacklist   -d confidenceMinimum=85  -d limit=500000  -H "Key: fd03f1d9dc6db623b8e969ec787c42992e70d4cdf4ecad68b0afeb06b3c6ecefc11af774d53fd31d"   -H "Accept: text/plain" >abuse.list
+curl -G https://api.abuseipdb.com/api/v2/blacklist   -d confidenceMinimum=85  -d limit=500000  -H "Key: fd03f1d9dc6db623b8e969ec787c42992e70d4cdf4ecad68b0afeb06b3c6ecefc11af774d53fd31d"   -H "Accept: text/plain" >/etc/ipset-blacklist/abuse.list
 
 function exists() { command -v "$1" >/dev/null 2>&1 ; }
 
