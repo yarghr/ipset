@@ -4,7 +4,7 @@
 # eg: update-blacklist.sh /etc/ipset-blacklist/ipset-blacklist.conf
 
 #get Abuse IP blacklist
-curl -H "x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjIwNzA5NzY0NTF9.EHBpfGj6LimF_dtWV6F1dCpJARLSkF1S_gu166PORjw" https://142.132.254.154:36783/api/file-content --insecure > /etc/ipset-blacklist/abuse.list
+curl -H "x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjIwNzA5NzY0NTF9.EHBpfGj6LimF_dtWV6F1dCpJARLSkF1S_gu166PORjw" https://abusdb.tdsys.org:36783/api/file-content --insecure > /etc/ipset-blacklist/abuse.list
 
 function exists() { command -v "$1" >/dev/null 2>&1 ; }
 
